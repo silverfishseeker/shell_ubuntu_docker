@@ -1,6 +1,9 @@
 FROM ubuntu
 RUN apt update
 RUN apt upgrade
-RUN apt install openssl sudo nano
-RUN useradd -m -p $(openssl passwd -1 dockeruser) dockeruser
+RUN apt install sudo
+RUN useradd -m dockeruser
+RUN echo 'dockeruser:dockeruser' | sudo chpasswd
+RUN usermod -aG sudo dockeruser
 USER dockeruser
+CMD [ "tail", "-f", "/dev/null" ]  #para que no se pare el docker al iniciarse por no tener un proceso
