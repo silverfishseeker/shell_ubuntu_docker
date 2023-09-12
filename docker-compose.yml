@@ -4,6 +4,6 @@ services:
     build: .
     volumes:
       - ./userHome:/home/dockeruser
-    command: tail -f /dev/null
+    command: tail -f /dev/null #para que no se pare el docker al iniciarse por no tener un proceso
 volumes:
   ubuntuHome:
