@@ -1,6 +1,7 @@
 FROM ubuntu
 RUN apt update
 RUN apt upgrade
+# Añade en esta línea de abajo las cosas que te quieras instalar permanentementea
 RUN apt install sudo
 RUN useradd -m dockeruser
 RUN echo 'dockeruser:dockeruser' | sudo chpasswd
