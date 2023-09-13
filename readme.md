@@ -2,7 +2,7 @@
 Una imagen de docker Ubuntu para ejecutar comandos en un entorno Linux desde la comodidad de tu sistema operativo nativo. Los archivos los tienes en **./userHome** y luego se abre un terminal de Ubuntu con acceso a los mismos.
 
 # Requisitos
-El único requisito es tener docker instalado en tu ordenador y tener acceso a internet (para descargar los paquetes automáticamente).
+El único requisito es tener docker instalado en tu ordenador y tener acceso a internet (para descargar los paquetes automáticamente). Bueno y para usar este proyecto vale con descargártelo y te lo guardas donde quieras (no instalas nada). Desde github.com le puedes dar a Code -> Dowload ZIP y luego me lo descomprimes.
 
 # Cómo usar
 Para iniciar o reiniciar el docker de ubuntu ejecuta **run.bat** (es necesario tener tu docker iniciado). Esto te abrirá un terminal de comandos dentro de ubuntu con:
